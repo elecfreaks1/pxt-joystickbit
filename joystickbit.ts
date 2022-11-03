@@ -64,7 +64,7 @@ namespace joystickbit {
     */
     //% blockId=onButtonEvent block="on button %button|is %event" blockExternalInputs=false
     export function onButtonEvent(button: JoystickBitPin, event: ButtonType, handler: () => void): void {
-        pins.onPulsed(<number>button, <number>event) = handler;
+        pins.onPulsed(<number>button, <number>event, handler);
     }
 
 
